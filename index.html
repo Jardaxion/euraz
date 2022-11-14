@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Деловая евразия</title>
+</head>
+<body>
+  <header class="header">
+    <div class="wrapper">
+      <div class="header__inner"><a class="header__left" href="index.html"><img class="header__logo" src="img/logo.png" alt=""></a>
+        <div class="header__right">
+          <ul class="header__list">
+            <li class="header__item header__link-line js-open-desktop-menu"><a class="header__link" href="#">Услуги</a>
+              <svg width="10" height="6" viewbox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L5 5L9 1" stroke="#253769" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </li>
+            <li class="header__item"><a class="header__link" href="1">О компании</a></li>
+            <li class="header__item"><a class="header__link" href="2">Новости</a></li>
+            <li class="header__item"><a class="header__link" href="3">Обучение</a></li>
+            <li class="header__item"><a class="header__link" href="4">Карьера</a></li>
+            <li class="header__item"><a class="header__link" href="5">Контакты</a></li>
+          </ul>
+          <div class="header__menu"><a class="header__menu-item" href="">Сертификация</a><a class="header__menu-item" href="">Услуга 1</a><a class="header__menu-item" href="">Услуга 2</a>
+          </div>
+          <div class="header__column"><a class="button header__button js-open-modal" href="" data-modal="request">Консультация</a><a class="header__phone" href="tel=+78008008080">8 800 800-80-80 </a></div>
+          <div class="header__social"><a class="social header__social-link" href="">
+              <svg width="26" height="25" viewbox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 7.54572C0.0832696 6.95734 0.146713 6.36561 0.252554 5.7815C0.852522 2.47309 3.19353 0.222112 6.54078 0.106756C10.571 -0.0317938 14.6134 -0.039118 18.6429 0.106146C22.2861 0.237371 24.9245 2.93635 25.0382 6.58259C25.1593 10.4544 25.1593 14.3356 25.0382 18.2073C24.9245 21.8536 22.287 24.5523 18.6432 24.6838C14.6137 24.8294 10.5704 24.833 6.54109 24.6816C2.89736 24.5446 0.378526 21.8395 0.134817 18.1878C0.113771 17.872 0.0460576 17.5588 0 17.2445C0 14.0115 0 10.7784 0 7.54572ZM12.5679 22.5228C14.412 22.5228 16.258 22.5781 18.0997 22.51C20.9873 22.4029 22.7634 20.6787 22.8308 17.7923C22.9144 14.1958 22.9144 10.5944 22.8308 6.99763C22.7634 4.11188 20.9861 2.34736 18.0997 2.28602C14.4361 2.2085 10.7686 2.20911 7.10506 2.28602C4.24065 2.34614 2.45935 4.07496 2.38157 6.92896C2.28275 10.5709 2.28275 14.2193 2.38157 17.8613C2.45935 20.715 4.24065 22.4038 7.10537 22.51C8.92388 22.5778 10.747 22.5228 12.5679 22.5228Z" fill="#5C5C5C"></path>
+                <path d="M12.5645 5.99048C9.02817 5.99048 6.16101 8.85882 6.16101 12.397C6.16101 15.9355 9.02817 18.8039 12.5645 18.8039C16.1012 18.8039 18.9681 15.9355 18.9681 12.397C18.9681 8.85882 16.1012 5.99048 12.5645 5.99048ZM12.5645 16.5981C10.2455 16.5981 8.36567 14.7173 8.36567 12.397C8.36567 10.0768 10.2455 8.19598 12.5645 8.19598C14.8836 8.19598 16.7634 10.0768 16.7634 12.397C16.7634 14.7173 14.8836 16.5981 12.5645 16.5981Z" fill="#5C5C5C"></path>
+                <path d="M20.8653 5.69818C20.8653 6.53986 20.1833 7.22223 19.342 7.22223C18.5008 7.22223 17.8185 6.53986 17.8185 5.69818C17.8185 4.8562 18.5008 4.17383 19.342 4.17383C20.1833 4.17383 20.8653 4.8562 20.8653 5.69818Z" fill="#5C5C5C"> </path>
+              </svg></a><a class="social header__social-link" href="">
+              <svg width="25" height="24" viewbox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M21.4701 3.48779C19.2152 1.23984 16.2163 0.00131836 13.0215 0C6.43819 0 1.08037 5.33481 1.07772 11.8917C1.07684 13.9878 1.62674 16.0339 2.67198 17.8374L0.977539 24L7.3091 22.3462C9.0537 23.2938 11.0178 23.7932 13.0166 23.7938H13.0216C19.6041 23.7938 24.9625 18.4585 24.965 11.9013C24.9664 8.72344 23.7252 5.7356 21.4701 3.48779ZM13.0215 21.7853H13.0173C11.2361 21.7846 9.48915 21.3079 7.96477 20.4075L7.60244 20.1932L3.84519 21.1746L4.84806 17.527L4.61194 17.153C3.6182 15.5792 3.09345 13.7602 3.09433 11.8925C3.09639 6.44253 7.54977 2.00859 13.0254 2.00859C15.677 2.00947 18.1695 3.03896 20.0437 4.90737C21.9179 6.77578 22.9495 9.25928 22.9486 11.9005C22.9462 17.3509 18.4931 21.7853 13.0215 21.7853ZM18.4667 14.3821C18.1683 14.2333 16.701 13.5146 16.4274 13.4153C16.1541 13.3162 15.9549 13.2668 15.7561 13.5642C15.5571 13.8615 14.9853 14.531 14.8111 14.7292C14.6369 14.9275 14.463 14.9524 14.1645 14.8036C13.866 14.6549 12.9045 14.341 11.7645 13.3286C10.8774 12.5407 10.2786 11.5676 10.1044 11.2702C9.93049 10.9726 10.1029 10.8272 10.2353 10.6638C10.5584 10.2643 10.8819 9.84551 10.9813 9.64732C11.0809 9.44897 11.031 9.27539 10.9563 9.12671C10.8819 8.97803 10.285 7.51538 10.0364 6.92022C9.79397 6.34102 9.54814 6.41924 9.36484 6.41016C9.19095 6.40151 8.99191 6.39976 8.79287 6.39976C8.59397 6.39976 8.27062 6.47402 7.99699 6.77168C7.72351 7.06919 6.95264 7.78799 6.95264 9.25064C6.95264 10.7133 8.022 12.1263 8.17117 12.3246C8.32034 12.523 10.2756 15.5244 13.2692 16.8114C13.9812 17.1179 14.537 17.3005 14.9705 17.4375C15.6855 17.6637 16.3359 17.6317 16.8502 17.5553C17.4236 17.4699 18.6157 16.8363 18.8646 16.1423C19.1132 15.4481 19.1132 14.8532 19.0385 14.7292C18.9641 14.6052 18.765 14.531 18.4667 14.3821Z" fill="#5C5C5C"></path>
+              </svg></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="sliderMain"> 
+      <div class="sliderMain__inner">
+        <div class="sliderMain__leftArrow sliderMain__arrow">
+          <svg width="14" height="16" viewbox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.292893 7.29289C-0.0976315 7.68342 -0.0976315 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292893 7.29289ZM14 7L1 7V9L14 9V7Z" fill="#414141"></path>
+          </svg>
+        </div>
+        <div class="sliderMain__content">
+          <div class="slide__wrapper">
+            <div class="slider__slide">
+              <div class="slide__left">
+                <p class="slide__title">Центр сертификации и промышленной безопасности</p>
+                <p class="slide__descirption">Оставьте заявку и получите скидку на любую нашу услугу</p><a class="button slide__button js-open-modal" href="#" data-modal="request">Оставить заявку</a>
+              </div>
+              <div class="slide__right"><img class="slide__img" src="img/slider/car.png" alt=""></div>
+            </div>
+          </div>
+          <div class="slide__wrapper">
+            <div class="slider__slide">
+              <div class="slide__left">
+                <p class="slide__title">Центр сертификации и промышленной безопасности</p>
+                <p class="slide__descirption">Оставьте заявку и получите скидку на любую нашу услугу</p><a class="button slide__button js-open-modal" href="#" data-modal="request">Оставить заявку</a>
+              </div>
+              <div class="slide__right"><img class="slide__img" src="img/slider/car.png" alt=""></div>
+            </div>
+          </div>
+          <div class="slide__wrapper">
+            <div class="slider__slide">
+              <div class="slide__left">
+                <p class="slide__title">Центр сертификации и промышленной безопасности</p>
+                <p class="slide__descirption">Оставьте заявку и получите скидку на любую нашу услугу</p><a class="button slide__button js-open-modal" href="#" data-modal="request">Оставить заявку</a>
+              </div>
+              <div class="slide__right"><img class="slide__img" src="img/slider/car.png" alt=""></div>
+            </div>
+          </div>
+          <div class="slide__wrapper">
+            <div class="slider__slide">
+              <div class="slide__left">
+                <p class="slide__title">Центр сертификации и промышленной безопасности</p>
+                <p class="slide__descirption">Оставьте заявку и получите скидку на любую нашу услугу</p><a class="button slide__button js-open-modal" href="#" data-modal="request">Оставить заявку</a>
+              </div>
+              <div class="slide__right"><img class="slide__img" src="img/slider/car.png" alt=""></div>
+            </div>
+          </div>
+        </div>
+        <div class="sliderMain__rightArrow sliderMain__arrow">
+          <svg width="14" height="16" viewbox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.7071 8.70711C14.0976 8.31658 14.0976 7.68342 13.7071 7.29289L7.34315 0.928933C6.95262 0.538408 6.31946 0.538408 5.92893 0.928933C5.53841 1.31946 5.53841 1.95262 5.92893 2.34315L11.5858 8L5.92893 13.6569C5.53841 14.0474 5.53841 14.6805 5.92893 15.0711C6.31946 15.4616 6.95262 15.4616 7.34315 15.0711L13.7071 8.70711ZM-8.74228e-08 9L13 9L13 7L8.74228e-08 7L-8.74228e-08 9Z" fill="#414141"></path>
+          </svg>
+        </div>
+      </div>
+    </section>
+    <section class="services">
+      <div class="container">
+        <div class="services__inner">
+          <div class="services__top">
+            <p class="title services__title">Услуги</p><a class="services__more" href=""> <span class="services__more-title">Смотреть все</span>
+              <svg class="services__more-arrow" width="23" height="16" viewbox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.7071 8.70711C23.0976 8.31658 23.0976 7.68342 22.7071 7.29289L16.3431 0.928932C15.9526 0.538408 15.3195 0.538408 14.9289 0.928932C14.5384 1.31946 14.5384 1.95262 14.9289 2.34315L20.5858 8L14.9289 13.6569C14.5384 14.0474 14.5384 14.6805 14.9289 15.0711C15.3195 15.4616 15.9526 15.4616 16.3431 15.0711L22.7071 8.70711ZM0 9H22V7H0V9Z" fill="#253769"></path>
+              </svg></a>
+          </div>
+          <div class="services__bottom"><a class="services__service service__item" href="product.html"><img class="service__img" src="img/services/service.png" alt=""/>
+              <div class="service__line">
+                <p class="service__title">Сертификации</p>
+                <svg class="service__arrow" width="23" height="16" viewbox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22.7071 8.70711C23.0976 8.31658 23.0976 7.68342 22.7071 7.29289L16.3431 0.928932C15.9526 0.538408 15.3195 0.538408 14.9289 0.928932C14.5384 1.31946 14.5384 1.95262 14.9289 2.34315L20.5858 8L14.9289 13.6569C14.5384 14.0474 14.5384 14.6805 14.9289 15.0711C15.3195 15.4616 15.9526 15.4616 16.3431 15.0711L22.7071 8.70711ZM0 9H22V7H0V9Z" fill="#253769"></path>
+                </svg>
+              </div>
+              <p class="service__description">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, nam libero</p></a>
+            <div class="service__catalog service__item"><a class="service__catalog-link" href="">Сертификация продукции</a><a class="service__catalog-link" href="">Сертификация систем менеджмента</a><a class="service__catalog-link" href="">ИСО(ISO)</a><a class="service__catalog-link" href="">Сертификация услуг</a>
+            </div><a class="services__service service__item" href="product.html"><img class="service__img" src="img/services/service.png" alt=""/>
+              <div class="service__line">
+                <p class="service__title">Консалтинг</p>
+                <svg class="service__arrow" width="23" height="16" viewbox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22.7071 8.70711C23.0976 8.31658 23.0976 7.68342 22.7071 7.29289L16.3431 0.928932C15.9526 0.538408 15.3195 0.538408 14.9289 0.928932C14.5384 1.31946 14.5384 1.95262 14.9289 2.34315L20.5858 8L14.9289 13.6569C14.5384 14.0474 14.5384 14.6805 14.9289 15.0711C15.3195 15.4616 15.9526 15.4616 16.3431 15.0711L22.7071 8.70711ZM0 9H22V7H0V9Z" fill="#253769"></path>
+                </svg>
+              </div>
+              <p class="service__description">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, nam libero</p></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="partners">
+      <div class="partners__inner"> 
+        <div class="container"> 
+          <p class="title partners__title">Наши партнеры</p>
+        </div>
+        <div class="partners__content"><img class="partners__content-img" src="img/partners/1.png" alt=""><img class="partners__content-img" src="img/partners/2.png" alt=""><img class="partners__content-img" src="img/partners/3.png" alt=""><img class="partners__content-img" src="img/partners/4.png" alt=""><img class="partners__content-img" src="img/partners/5.png" alt=""><img class="partners__content-img" src="img/partners/6.png" alt=""><img class="partners__content-img" src="img/partners/7.png" alt=""><img class="partners__content-img" src="img/partners/8.png" alt=""><img class="partners__content-img" src="img/partners/9.png" alt="">
+        </div>
+      </div>
+    </section>
+    <section class="banners">
+      <div class="container">
+        <div class="banners__inner">
+          <div class="banner__line banner">
+            <div class="banner__left">
+              <p class="banner__title">Более 5 лет успешной работы</p>
+              <p class="banner__description long">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, nisi ut aliquid ex ea commo</p>
+            </div>
+            <div class="banner__right"><img class="banner__outImg" src="img/banners/icon_car.png" alt=""></div>
+          </div>
+          <div class="banners__bottom">
+            <div class="banner__big banner">
+              <p class="banner__title big">Работаем по всей России а так же в странах СНГ, Европы, Азии</p>
+              <p class="banner__description min">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, nam libero tempore, cum solu</p>
+              <div class="banner__flags"><img class="banner__flag" src="img/banners/1.png" alt=""/><img class="banner__flag" src="img/banners/2.png" alt=""/><img class="banner__flag" src="img/banners/1.png" alt=""/><img class="banner__flag" src="img/banners/2.png" alt=""/><img class="banner__flag" src="img/banners/1.png" alt=""/><img class="banner__flag" src="img/banners/2.png" alt=""/>
+              </div><img class="banner__world" src="img/banners/world.png" alt="">
+            </div>
+            <div class="banners__right">
+              <div class="banner__mini banner left">
+                <div class="banner__mini-left">
+                  <p class="banner__title">Аккредитация и лицензия от ведущих центров</p>
+                  <p class="banner__description">Temporibus autem quibusdam et aut officiis debitis aut rerum</p>
+                </div>
+                <div class="banner__mini-right"><img class="banner__img" src="img/banners/document.png" alt=""></div>
+              </div>
+              <div class="banner__mini banner right">
+                <div class="banner__mini-left">
+                  <p class="banner__title">Более 50 специалистов в штате компании</p>
+                  <p class="banner__description">Temporibus autem quibusdam et aut officiis debitis aut rerum</p>
+                </div>
+                <div class="banner__mini-right"><img class="banner__img" src="img/banners/man.png" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about">
+      <div class="container">
+        <div class="about__inner">
+          <div class="about__top">
+            <div class="about__left">
+              <div class="about__line">
+                <p class="title about__title">О нашей компании</p><a class="button about__button" href="">Аттестат аккредитации</a>
+              </div>
+              <p class="about__description">
+                 Группа Компаний ДЕЛОВАЯ ЕВРАЗИЯ на рынке сертификации и консалтинговых услуг более 5 лет.<br>
+                <br><br>
+                На протяжении этого времени мы выстраиваем надежные деловые отношения с клиентами и партнерами, основываясь на принципах добропорядочности, ответственности и компетенции.
+                <br><br>
+                Наша компания оснащена фондом нормативных документов, кадровыми ресурсами, независима, аккредитована в системе добровольной сертификации и является экспертной организацией для выполнения работ на самом высоком уровне. 
+                Сотрудники нашей компании регулярно проходят дополнительное обучение.
+                <br><br>
+                ООО ГК ДЕЛОВАЯ ЕВРАЗИЯ является членом Общественной организации ОПОРА России, ведущей общественную деятельность по развитию бизнеса в регионе и повышению уровня предпринимательства в Новосибирске и Новосибирской области. Важным аспектом данного направления деятельности является обмен и распространение положительного опыта работы между членами данных организаций, содействие в достижении цели развития региона, предпринимательства.<br>
+                Наша компания представлена: <br><br>
+              </p>
+              <ul class="about__list">
+                <li class="about__item">Испытательной лабораторией (аттестат аккредитации № РОСС RU.32248.04СЕЛ0.1.22)</li>
+                <li class="about__item">Отделом сертификации;</li>
+                <li class="about__item">Отделом сопровождения клиентов;</li>
+                <li class="about__item">Отделом обучения;</li>
+              </ul>
+            </div>
+            <div class="about__right">
+              <div class="about__roundImg">
+                <svg class="about__roundImg-back" width="324" height="324" viewbox="0 0 324 324" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="162" cy="162" r="161.5" stroke="#253769"></circle>
+                </svg><img class="about__roundImg-img" src="img/about/photo.png" alt="">
+              </div><img class="about__right-img" src="img/about/1.png"><img class="about__right-img" src="img/about/2.png">
+            </div>
+          </div>
+          <div class="about__bottom">
+            <div class="about__column">
+              <p class="about__number">15</p>
+              <hr class="about__hr">
+              <p class="about__text">Лабораторий на территории РФ</p>
+            </div>
+            <div class="about__column">
+              <p class="about__number mini">1995</p>
+              <hr class="about__hr">
+              <p class="about__text">Лабораторий на территории РФ</p>
+            </div>
+            <div class="about__column">
+              <p class="about__number">15</p>
+              <hr class="about__hr">
+              <p class="about__text">Лабораторий на территории РФ</p>
+            </div>
+            <div class="about__column">
+              <p class="about__number">8</p>
+              <hr class="about__hr">
+              <p class="about__text">Лабораторий на территории РФ</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="articles">
+      <div class="container">
+        <div class="articles__inner">
+          <p class="title articles__title">Новости спецификации</p>
+          <div class="articles__content"><a class="articles__article" href="article.html"><img class="articles__article-img" src="img/articles/1.png">
+              <div class="articles__article-bottom">
+                <p class="articles__article-title">Наименование новости</p>
+                <p class="articles__article-description">Краткое описание Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus </p>
+                <div class="articles__more">
+                  <p class="articles__more-title">Читать новость</p>
+                  <svg class="articles__more-arrow" width="23" height="16" viewbox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22.7071 8.70711C23.0976 8.31658 23.0976 7.68342 22.7071 7.29289L16.3431 0.928932C15.9526 0.538408 15.3195 0.538408 14.9289 0.928932C14.5384 1.31946 14.5384 1.95262 14.9289 2.34315L20.5858 8L14.9289 13.6569C14.5384 14.0474 14.5384 14.6805 14.9289 15.0711C15.3195 15.4616 15.9526 15.4616 16.3431 15.0711L22.7071 8.70711ZM0 9H22V7H0V9Z" fill="#253769"></path>
+                  </svg>
+                </div>
+              </div></a><a class="articles__article" href="article.html"><img class="articles__article-img" src="img/articles/2.png">
+              <div class="articles__article-bottom">
+                <p class="articles__article-title">Наименование новости</p>
+                <p class="articles__article-description">Краткое описание Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus </p>
+                <div class="articles__more">
+                  <p class="articles__more-title">Читать новость</p>
+                  <svg class="articles__more-arrow" width="23" height="16" viewbox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22.7071 8.70711C23.0976 8.31658 23.0976 7.68342 22.7071 7.29289L16.3431 0.928932C15.9526 0.538408 15.3195 0.538408 14.9289 0.928932C14.5384 1.31946 14.5384 1.95262 14.9289 2.34315L20.5858 8L14.9289 13.6569C14.5384 14.0474 14.5384 14.6805 14.9289 15.0711C15.3195 15.4616 15.9526 15.4616 16.3431 15.0711L22.7071 8.70711ZM0 9H22V7H0V9Z" fill="#253769"></path>
+                  </svg>
+                </div>
+              </div></a><a class="articles__article" href="article.html"><img class="articles__article-img" src="img/articles/3.png">
+              <div class="articles__article-bottom">
+                <p class="articles__article-title">Наименование новости</p>
+                <p class="articles__article-description">Краткое описание Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus </p>
+                <div class="articles__more">
+                  <p class="articles__more-title">Читать новость</p>
+                  <svg class="articles__more-arrow" width="23" height="16" viewbox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22.7071 8.70711C23.0976 8.31658 23.0976 7.68342 22.7071 7.29289L16.3431 0.928932C15.9526 0.538408 15.3195 0.538408 14.9289 0.928932C14.5384 1.31946 14.5384 1.95262 14.9289 2.34315L20.5858 8L14.9289 13.6569C14.5384 14.0474 14.5384 14.6805 14.9289 15.0711C15.3195 15.4616 15.9526 15.4616 16.3431 15.0711L22.7071 8.70711ZM0 9H22V7H0V9Z" fill="#253769"></path>
+                  </svg>
+                </div>
+              </div></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="questions">
+      <div class="container">
+        <div class="questions__inner">
+          <div class="questions__line">
+            <p class="title questions__title">Как происходит получение услуги</p>
+            <div class="questions__arrows">
+              <svg class="questions__leftArrow questions__arrow" width="14" height="16" viewbox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.292893 7.29289C-0.0976315 7.68342 -0.0976315 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292893 7.29289ZM14 7L1 7V9L14 9V7Z" fill="#414141"></path>
+              </svg>
+              <svg class="questions__rightArrow questions__arrow" width="14" height="16" viewbox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.7071 8.70711C14.0976 8.31658 14.0976 7.68342 13.7071 7.29289L7.34315 0.928933C6.95262 0.538408 6.31946 0.538408 5.92893 0.928933C5.53841 1.31946 5.53841 1.95262 5.92893 2.34315L11.5858 8L5.92893 13.6569C5.53841 14.0474 5.53841 14.6805 5.92893 15.0711C6.31946 15.4616 6.95262 15.4616 7.34315 15.0711L13.7071 8.70711ZM-8.74228e-08 9L13 9L13 7L8.74228e-08 7L-8.74228e-08 9Z" fill="#414141"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="questions__content">
+            <div class="questions__question">
+              <p class="question__title">Заявка</p>
+              <p class="question__description">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, nisi ut aliquid ex ea commo</p><a class="button question__button" href="#">Оставить заявку</a>
+              <p class="question__number">1</p>
+            </div>
+            <div class="questions__question">
+              <p class="question__title">Сбор документов</p>
+              <p class="question__description">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, nisi ut aliquid ex ea commo</p>
+              <div class="question__link"><a class="question__link-icon" href="">
+                  <svg width="19" height="19" viewbox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.75 1C18.75 0.585786 18.4142 0.25 18 0.25L11.25 0.249999C10.8358 0.249999 10.5 0.585786 10.5 0.999999C10.5 1.41421 10.8358 1.75 11.25 1.75H17.25V7.75C17.25 8.16421 17.5858 8.5 18 8.5C18.4142 8.5 18.75 8.16421 18.75 7.75L18.75 1ZM8.53033 11.5303L18.5303 1.53033L17.4697 0.469669L7.46967 10.4697L8.53033 11.5303Z" fill="#253769"></path>
+                    <path d="M15 11V16C15 17.1046 14.1046 18 13 18H3C1.89543 18 1 17.1046 1 16V6C1 4.89543 1.89543 4 3 4H8" stroke="#253769" stroke-width="1.5"></path>
+                  </svg></a>
+                <p class="question__link-text"><a class="question__link-link" href="">Список документов</a>- проверьте список документов для сбора   </p>
+              </div>
+              <p class="question__number">2</p>
+            </div>
+            <div class="questions__question">
+              <p class="question__title">Расчет стоимости сроков</p>
+              <p class="question__description">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, nisi ut aliquid ex ea commo</p> 
+              <p class="question__number">3</p>
+            </div>
+            <div class="questions__question">
+              <p class="question__title">Расчет стоимости сроков</p>
+              <p class="question__description">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, nisi ut aliquid ex ea commo</p>
+              <p class="question__number">4</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="calculate">
+      <div class="container">
+        <div class="calculate__inner">
+          <div class="calculate__left">
+            <p class="title calculate__title">Рассчитайте стоимость сертификации</p>
+            <p class="calculate__description">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, nam libero tempore, cum soluta nobis est eligendi optio,</p><a class="button calculate__button" href="#">Рассчитать стоимость</a>
+          </div>
+          <div class="calculate__right"><img class="calculate__img" src="img/manDoc.png" alt=""></div>
+        </div>
+      </div>
+    </section>
+    <section class="faq">
+      <div class="container">
+        <div class="faq__inner">
+          <p class="title faq__title">Часто задаваемые вопросы</p>
+          <div class="faq__content">
+            <div class="faq__question">
+              <div class="faq__top">
+                <p class="faq__miniTitle">Вопрос первый</p>
+                <div class="faq__close js-close-open-question">
+                  <svg width="19" height="19" viewbox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="9.5" y1="0.5" x2="9.5" y2="18.5" stroke="black" stroke-linecap="round"></line>
+                    <line x1="18.5" y1="9.5" x2="0.5" y2="9.5" stroke="black" stroke-linecap="round"></line>
+                  </svg>
+                </div>
+              </div>
+              <div class="faq__bottom">
+                <p class="faq__description">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, nisi ut aliquid ex ea commodi consequatur. At vero eo</p>
+              </div>
+              <hr class="faq__line"/>
+            </div>
+            <div class="faq__question">
+              <div class="faq__top">
+                <p class="faq__miniTitle">Вопрос второй</p>
+                <div class="faq__close js-close-open-question">
+                  <svg width="19" height="19" viewbox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="9.5" y1="0.5" x2="9.5" y2="18.5" stroke="black" stroke-linecap="round"></line>
+                    <line x1="18.5" y1="9.5" x2="0.5" y2="9.5" stroke="black" stroke-linecap="round"></line>
+                  </svg>
+                </div>
+              </div>
+              <div class="faq__bottom">
+                <p class="faq__description">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, nisi ut aliquid ex ea commodi consequatur. At vero eo</p>
+              </div>
+              <hr class="faq__line"/>
+            </div>
+            <div class="faq__question">
+              <div class="faq__top">
+                <p class="faq__miniTitle">Вопрос третий</p>
+                <div class="faq__close js-close-open-question">
+                  <svg width="19" height="19" viewbox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="9.5" y1="0.5" x2="9.5" y2="18.5" stroke="black" stroke-linecap="round"></line>
+                    <line x1="18.5" y1="9.5" x2="0.5" y2="9.5" stroke="black" stroke-linecap="round"></line>
+                  </svg>
+                </div>
+              </div>
+              <div class="faq__bottom">
+                <p class="faq__description">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, nisi ut aliquid ex ea commodi consequatur. At vero eo</p>
+              </div>
+              <hr class="faq__line"/>
+            </div>
+            <div class="faq__question">
+              <div class="faq__top">
+                <p class="faq__miniTitle">Вопрос четвертый</p>
+                <div class="faq__close js-close-open-question">
+                  <svg width="19" height="19" viewbox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="9.5" y1="0.5" x2="9.5" y2="18.5" stroke="black" stroke-linecap="round"></line>
+                    <line x1="18.5" y1="9.5" x2="0.5" y2="9.5" stroke="black" stroke-linecap="round"></line>
+                  </svg>
+                </div>
+              </div>
+              <div class="faq__bottom">
+                <p class="faq__description">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, nisi ut aliquid ex ea commodi consequatur. At vero eo</p>
+              </div>
+              <hr class="faq__line"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer__inner">
+        <div class="footer__column"><img class="footer__logo" src="img/logo2.png" alt=""><a class="footer__link-grey" href="#">Политика конфиденциальности</a>
+          <p class="footer__copyright">Создано в Klishin Agency</p>
+        </div>
+        <div class="footer__column catalogColumn">
+          <p class="footer__column-title">Информация</p>
+          <ul class="footer__column-list"> 
+            <li class="footer__column-item"><a class="footer__column-link" href="concats">Контакты</a></li>
+            <li class="footer__column-item"><a class="footer__column-link" href="clients">Клиентам</a></li>
+            <li class="footer__column-item"><a class="footer__column-link" href="polit">Политика конфиденциальности</a></li>
+          </ul>
+        </div>
+        <div class="footer__column catalogColumn">
+          <p class="footer__column-title">Услуги</p>
+          <ul class="footer__column-list"> 
+            <li class="footer__column-item"><a class="footer__column-link" href="product.html">Сертификация </a></li>
+            <li class="footer__column-item"><a class="footer__column-link" href="product.html">Сертификация </a></li>
+            <li class="footer__column-item"><a class="footer__column-link" href="product.html">Сертификация </a></li>
+            <li class="footer__column-item"><a class="footer__column-link" href="product.html">Сертификация </a></li>
+          </ul>
+        </div>
+        <div class="footer__column">
+          <div class="footer__column-box">
+            <p class="footer__column-title littleMargin">Контактая информация</p><a class="footer__column-link big" href="tel=+78003989777">8 800 398-97-77</a>
+          </div>
+          <div class="footer__column-box">
+            <p class="footer__column-title littleMargin">Свяжитесь с нами:</p>
+            <div class="footer__column-social"><a class="footer__social-link social" href="#">
+                <svg width="30" height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.539185 9.42074C0.634945 8.74411 0.707905 8.06361 0.829622 7.39189C1.51958 3.58722 4.21174 0.998593 8.06108 0.865934C12.6958 0.706601 17.3445 0.698178 21.9786 0.865232C26.1682 1.01614 29.2023 4.11996 29.3331 8.31314C29.4724 12.7657 29.4724 17.2291 29.3331 21.6816C29.2023 25.8748 26.1692 28.9783 21.9789 29.1295C17.3449 29.2969 12.6951 29.3011 8.06143 29.1271C3.87114 28.9695 0.974489 25.8586 0.694225 21.6591C0.670022 21.2959 0.592151 20.9358 0.539185 20.5744C0.539185 16.8564 0.539185 13.1384 0.539185 9.42074ZM14.9923 26.6444C17.113 26.6444 19.2359 26.7079 21.3538 26.6297C24.6746 26.5065 26.7171 24.5236 26.7946 21.2043C26.8907 17.0683 26.8907 12.9268 26.7946 8.79043C26.7171 5.47183 24.6732 3.44262 21.3538 3.37208C17.1407 3.28294 12.9231 3.28364 8.71001 3.37208C5.41593 3.44122 3.36744 5.42936 3.27799 8.71147C3.16434 12.8997 3.16434 17.0954 3.27799 21.2836C3.36744 24.5654 5.41593 26.5076 8.71036 26.6297C10.8016 26.7076 12.8982 26.6444 14.9923 26.6444Z" fill="#3F3F3F"></path>
+                  <path d="M14.9884 7.63232C10.9216 7.63232 7.62433 10.9309 7.62433 14.9999C7.62433 19.0691 10.9216 22.3677 14.9884 22.3677C19.0556 22.3677 22.3524 19.0691 22.3524 14.9999C22.3524 10.9309 19.0556 7.63232 14.9884 7.63232ZM14.9884 19.8311C12.3215 19.8311 10.1597 17.6681 10.1597 14.9999C10.1597 12.3316 12.3215 10.1687 14.9884 10.1687C17.6553 10.1687 19.8171 12.3316 19.8171 14.9999C19.8171 17.6681 17.6553 19.8311 14.9884 19.8311Z" fill="#3F3F3F"></path>
+                  <path d="M24.5343 7.29598C24.5343 8.2639 23.75 9.04863 22.7825 9.04863C21.8151 9.04863 21.0305 8.2639 21.0305 7.29598C21.0305 6.3277 21.8151 5.54297 22.7825 5.54297C23.75 5.54297 24.5343 6.3277 24.5343 7.29598Z" fill="#3F3F3F"> </path>
+                </svg></a><a class="footer__social-link social" href="#">
+                <svg width="37" height="23" viewbox="0 0 37 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.172 22.4375C24.3773 22.4375 22.5213 19.2321 22.9231 18.3104C22.9171 17.6221 22.9111 16.96 22.935 16.5575C23.2649 16.6479 24.043 17.0315 25.6501 18.551C28.1313 20.9865 28.7655 22.4375 30.77 22.4375H34.4595C35.6289 22.4375 36.2376 21.9665 36.542 21.5713C36.8358 21.1892 37.1237 20.5183 36.8088 19.4742C35.9857 16.96 31.1852 12.6185 30.8869 12.1606C30.9319 12.076 31.0038 11.9637 31.0413 11.9054H31.0383C31.9858 10.6877 35.6019 5.41729 36.1342 3.30854C36.1357 3.30562 36.1372 3.30125 36.1372 3.29688C36.425 2.33438 36.1612 1.71021 35.8883 1.35729C35.4775 0.829375 34.8239 0.5625 33.9408 0.5625H30.2512C29.0159 0.5625 28.0789 1.16771 27.6051 2.27167C26.812 4.23312 24.5842 8.26688 22.9141 9.69458C22.8631 7.67188 22.8976 6.1275 22.9246 4.97979C22.9785 2.74125 23.1524 0.5625 20.7642 0.5625H14.9652C13.469 0.5625 12.0372 2.15208 13.5874 4.03917C14.9427 5.69292 14.0747 6.61458 14.367 11.2025C13.2276 10.014 11.2007 6.80417 9.7674 2.70187C9.36561 1.59208 8.75693 0.563958 7.04332 0.563958H3.35374C1.85752 0.563958 0.963989 1.35729 0.963989 2.68583C0.963989 5.66958 7.75395 22.4375 19.172 22.4375ZM7.04332 2.75146C7.36865 2.75146 7.40164 2.75146 7.64301 3.41792C9.11075 7.62229 12.403 13.8435 14.8078 13.8435C16.6143 13.8435 16.6143 12.0425 16.6143 11.3644L16.6128 5.96562C16.5139 4.17917 15.8452 3.28958 15.406 2.75L20.6652 2.75583C20.6682 2.78063 20.6352 8.72771 20.6802 10.1685C20.6802 12.2146 22.3504 13.3871 24.9575 10.8204C27.7086 7.80021 29.6111 3.28521 29.6875 3.10146C29.8 2.83896 29.8974 2.75 30.2512 2.75H33.9408H33.9558C33.9543 2.75437 33.9543 2.75875 33.9528 2.76312C33.6155 4.29437 30.2857 9.17396 29.1718 10.6892C29.1538 10.7125 29.1373 10.7373 29.1208 10.7621C28.6306 11.5408 28.2318 12.4012 29.1883 13.6117H29.1898C29.2767 13.7137 29.5031 13.9529 29.833 14.2854C30.8584 15.315 34.3756 18.8354 34.6874 20.2354C34.4805 20.2675 34.2556 20.2442 30.77 20.2515C30.0279 20.2515 29.4477 19.1723 27.2333 16.9994C25.2423 15.1152 23.95 14.3452 22.7731 14.3452C20.4883 14.3452 20.6547 16.1492 20.6757 18.3308C20.6832 20.6963 20.6682 19.9481 20.6847 20.0969C20.5513 20.1479 20.169 20.25 19.172 20.25C9.65946 20.25 3.46469 5.56313 3.22631 2.75583C3.30877 2.74854 4.44368 2.75292 7.04332 2.75146Z" fill="#3F3F3F"></path>
+                </svg></a><a class="footer__social-link social" href="#">
+                <svg width="34" height="29" viewbox="0 0 34 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M33.4032 1.27805C33.0004 0.78508 32.3969 0.513672 31.7039 0.513672C31.3272 0.513672 30.9281 0.592979 30.5179 0.749832L2.59861 11.413C1.11696 11.9788 0.917409 12.8277 0.930243 13.2834C0.943076 13.7392 1.19044 14.5755 2.70178 15.0567C2.71084 15.0594 2.7199 15.0622 2.72896 15.0647L8.52018 16.7229L11.6521 25.6834C12.0791 26.905 13.0376 27.6638 14.1539 27.6638C14.8577 27.6638 15.55 27.3687 16.1559 26.8108L19.738 23.5108L24.9336 27.6965C24.9341 27.697 24.9348 27.6973 24.9353 27.6978L24.9847 27.7376C24.9892 27.7411 24.994 27.7449 24.9985 27.7484C25.576 28.1965 26.2064 28.4332 26.8221 28.4335H26.8224C28.0255 28.4335 28.9835 27.5424 29.2625 26.1637L33.8371 3.56387C34.0208 2.65674 33.8668 1.84503 33.4032 1.27805ZM10.4575 16.4079L21.6306 10.697L14.6735 18.0933C14.5595 18.2144 14.4787 18.3627 14.439 18.524L13.0975 23.9608L10.4575 16.4079ZM14.8466 25.3883C14.8003 25.4308 14.7538 25.4689 14.7072 25.5039L15.9518 20.4604L18.2158 22.2845L14.8466 25.3883ZM31.943 3.17992L27.3684 25.7801C27.3244 25.9963 27.1837 26.4996 26.8221 26.4996C26.6435 26.4996 26.419 26.4022 26.1893 26.2252L20.3019 21.4823C20.3012 21.4816 20.3001 21.4808 20.2991 21.4803L16.7961 18.658L26.8569 7.96204C27.179 7.61963 27.2081 7.09519 26.9261 6.71905C26.6437 6.3429 26.1321 6.22457 25.7137 6.43858L9.16638 14.8965L3.2964 13.2162L31.2072 2.55628C31.443 2.46615 31.6075 2.44727 31.7039 2.44727C31.7631 2.44727 31.8682 2.45432 31.9072 2.5024C31.9586 2.56509 32.024 2.77885 31.943 3.17992Z" fill="#3F3F3F"></path>
+                </svg></a><a class="footer__social-link social" href="#">
+                <svg width="27" height="28" viewbox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M23.1679 4.6761C20.7133 2.21741 17.449 0.86277 13.9714 0.861328C6.8054 0.861328 0.973323 6.69628 0.97044 13.8679C0.96948 16.1605 1.56806 18.3984 2.70581 20.371L0.861389 27.1113L7.75339 25.3025C9.65242 26.3389 11.7904 26.8851 13.9661 26.8857H13.9716C21.1367 26.8857 26.9695 21.0503 26.9722 13.8783C26.9736 10.4026 25.6226 7.13464 23.1679 4.6761ZM13.9714 24.689H13.9669C12.028 24.6882 10.1264 24.1669 8.46711 23.182L8.0727 22.9476L3.98288 24.0211L5.07451 20.0315L4.8175 19.6224C3.73579 17.9011 3.16459 15.9115 3.16556 13.8687C3.1678 7.90784 8.01537 3.05823 13.9757 3.05823C16.862 3.05919 19.5751 4.1852 21.6152 6.22877C23.6553 8.27234 24.7782 10.9887 24.7772 13.8775C24.7747 19.8389 19.9274 24.689 13.9714 24.689ZM19.8986 16.5918C19.5738 16.429 17.9767 15.643 17.6788 15.5343C17.3813 15.4259 17.1645 15.3719 16.9481 15.6971C16.7315 16.0224 16.109 16.7546 15.9194 16.9713C15.7298 17.1883 15.5405 17.2155 15.2156 17.0527C14.8907 16.8901 13.8441 16.5468 12.6032 15.4395C11.6376 14.5777 10.9857 13.5134 10.7961 13.1881C10.6068 12.8626 10.7945 12.7036 10.9386 12.5248C11.2903 12.0879 11.6424 11.6299 11.7507 11.4131C11.8591 11.1961 11.8048 11.0063 11.7234 10.8437C11.6424 10.681 10.9927 9.08127 10.7221 8.43031C10.4582 7.79681 10.1906 7.88237 9.9911 7.87244C9.80182 7.86298 9.58516 7.86106 9.3685 7.86106C9.152 7.86106 8.80003 7.94229 8.50218 8.26785C8.20449 8.59325 7.36539 9.37944 7.36539 10.9792C7.36539 12.579 8.5294 14.1244 8.69178 14.3414C8.85415 14.5583 10.9825 17.8412 14.2411 19.2488C15.0161 19.584 15.6211 19.7838 16.093 19.9336C16.8713 20.181 17.5792 20.146 18.139 20.0624C18.7632 19.969 20.0608 19.2761 20.3317 18.517C20.6024 17.7577 20.6024 17.107 20.521 16.9713C20.44 16.8358 20.2233 16.7546 19.8986 16.5918Z" fill="#3F3F3F"></path>
+                </svg></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery.marquee@1.6.0/jquery.marquee.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
