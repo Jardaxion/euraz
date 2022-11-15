@@ -474,6 +474,26 @@
       </div>
     </div>
   </footer>
+  <div class="modal__background"></div>
+  <div class="modal" id="request">
+    <div class="modal__inner">
+      <p class="modal__title">Оставь заявку</p>
+      <p class="modal__description">В течении дня мы свяжемся с Вами</p>
+      <form class="modal__form" action="">
+        <input class="modal__input" type="text" placeholder="Ф.И.О">
+        <input class="modal__input" type="text" placeholder="+ 7 (000) 000-00-00">
+        <textarea class="modal__textarea" placeholder="Комментарий"></textarea>
+        <button class="js-reOpen-modal button modal__button" type="submit" data-modal="thanks">Отправить заявку </button>
+      </form>
+      <p class="modal__subdescription">Отправляя заявку вы соглашаетесь с <a href="#">политикой конфиденциальности</a> сайта</p>
+    </div>
+  </div>
+  <div class="modal" id="thanks">
+    <div class="modal__inner center">
+      <p class="modal__title bigMargin">Спасибо что оставили заявку</p>
+      <button class="js-close-modal button modal__button" href="#">На главную </button>
+    </div>
+  </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/jquery.marquee@1.6.0/jquery.marquee.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>

@@ -296,6 +296,43 @@ main
             transition: .3s ease all;
 }
 
+input,
+textarea
+{
+    padding: 18px 25px;
+
+    color: #767676;
+    border: none;
+    border-radius: 7px;
+    outline: none;
+    background: #f4f4f4;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder
+{
+    color: #767676;
+}
+input::-moz-placeholder,
+textarea::-moz-placeholder
+{
+    color: #767676;
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder
+{
+    color: #767676;
+}
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder
+{
+    color: #767676;
+}
+input::placeholder,
+textarea::placeholder
+{
+    color: #767676;
+}
+
 /* UI компоненты */
 /* Модальное окно */
 .modal
@@ -331,18 +368,18 @@ main
 }
 .modal__inner
 {
-    min-width: 300px;
+    min-width: 532px;
     max-width: none;
-    min-height: 50px;
+    min-height: 495px;
     max-height: none;
-    padding: 10px;
+    padding: 47px 76px 33px 81px;
 
     -webkit-transition: .3s all;
          -o-transition: .3s all;
             transition: .3s all;
     pointer-events: none;
 
-    border-radius: 10px;
+    border-radius: 15px;
     background: white;
 }
 .modal__background
@@ -381,6 +418,105 @@ main
 .modal.active .modal__inner
 {
     pointer-events: all;
+}
+.modal__inner.center
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        flex-direction: column;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.modal__title
+{
+    font-size: 24px;
+    font-weight: 500;
+
+    margin-bottom: 12px;
+
+    text-align: center;
+}
+.modal__title.bigMargin
+{
+    margin-bottom: 46px;
+}
+.modal__description
+{
+    font-size: 14px;
+
+    margin-bottom: 20px;
+
+    text-align: center;
+}
+.modal__form
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        flex-direction: column;
+
+    width: 330px;
+    margin: 0 auto;
+    margin-bottom: 34px;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+}
+.modal__form *
+{
+    margin-bottom: 8px;
+}
+.modal__form:last-child
+{
+    margin-bottom: 0;
+}
+.modal__input,
+.modal__textarea,
+.modal__button
+{
+    width: 100%;
+}
+.modal__textarea
+{
+    height: 92px;
+    max-height: 200px;
+
+    resize: vertical;
+}
+.modal__button
+{
+    font-size: 18px;
+    font-weight: 700;
+
+    padding: 17px 45px;
+}
+.modal__subdescription
+{
+    font-size: 14px;
+
+    width: 444px;
+
+    text-align: center;
+
+    color: black;
+}
+.modal a
+{
+    position: relative;
+
+    text-decoration: underline;
+
+    color: #9f9f9f;
 }
 
 /* Кнопка */
@@ -3054,6 +3190,20 @@ main
     {
         display: none;
     }
+    .modal__inner
+    {
+        min-width: auto;
+        max-width: 450px;
+        min-height: auto;
+    }
+    .modal__form
+    {
+        width: auto;
+    }
+    .modal__subdescription
+    {
+        width: auto;
+    }
 }
 @media (max-width: 568px)
 {
@@ -3081,6 +3231,18 @@ main
         font-size: 14px;
 
         padding: 13px 55px;
+    }
+}
+@media (max-width: 510px)
+{
+    .modal
+    {
+        padding: 0 20px;
+    }
+    .modal__inner
+    {
+        width: 100%;
+        max-width: none;
     }
 }
 @media (max-width: 464px)
@@ -3118,6 +3280,13 @@ main
     .about__button
     {
         font-size: 12px;
+    }
+}
+@media (max-width: 400px)
+{
+    .modal__inner
+    {
+        padding: 47px 30px 33px 30px;
     }
 }
 @media (max-width: 386px)
