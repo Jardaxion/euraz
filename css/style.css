@@ -2406,6 +2406,112 @@ textarea::placeholder
     line-height: 24px;
 }
 
+/*---Обучение---*/
+.education__back
+{
+    margin: 82px 0 66px;
+}
+.education__title
+{
+    margin-bottom: 30px;
+}
+.education__description
+{
+    font-size: 18px;
+    line-height: 25px;
+
+    max-width: 524px;
+
+    color: #656f7c;
+}
+
+/*---Карьера---*/
+/* Большой блок */
+.jobs
+{
+    padding-bottom: 82px;
+}
+.jobs__back
+{
+    margin: 82px 0 66px;
+}
+.jobs__title
+{
+    margin-bottom: 20px;
+}
+.jobs__box:not(:last-of-type)
+{
+    margin-bottom: 30px;
+}
+.jobs__box-title
+{
+    font-size: 20px;
+
+    margin-bottom: 37px;
+
+    color: #a0a0a0;
+}
+.jobs__content
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        flex-direction: column;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+}
+.jobs__job
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    padding: 45px 74px;
+
+    border-radius: 12px;
+    background: #fff;
+    -webkit-box-shadow: 0 1px 25px rgba(13, 41, 56, .02);
+            box-shadow: 0 1px 25px rgba(13, 41, 56, .02);
+
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.jobs__job-left
+{
+    max-width: 739px;
+}
+
+/* Маленькие блоки */
+.job__title
+{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+
+    margin-bottom: 18px;
+
+    color: black;
+}
+.job__description
+{
+    font-size: 18px;
+    line-height: 25px;
+
+    color: #656f7c;
+}
+.job__button
+{
+    padding: 17px 40px;
+
+    text-transform: uppercase;
+}
+
 /* Футер */
 .footer
 {
@@ -3123,6 +3229,42 @@ textarea::placeholder
     .text__description
     {
         line-height: 21px;
+    }
+    .jobs__back
+    {
+        margin: 36px 0 66px;
+    }
+    .jobs__job
+    {
+            flex-direction: column;
+
+        padding: 35px 43px;
+
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+    }
+    .jobs__job-left
+    {
+        max-width: none;
+    }
+    .jobs__job-right
+    {
+        width: 100%;
+    }
+    .job__button
+    {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+
+        width: 100%;
+        margin-top: 20px;
+        padding: 17px 0;
+
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
     }
     .footer__inner
     {
