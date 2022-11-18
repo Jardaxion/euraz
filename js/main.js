@@ -18,6 +18,11 @@ $(document).ready(function(){
 
         openCloseMobMenu();
     })
+    $('.header__mobileMenu-item').on('click', function(){
+        if(!$(this).hasClass('js-open-desktop-menu')){
+            openCloseMobMenu();
+        }
+    })
 
     //Закрытие открытие вопроса в faq
     $('.js-close-open-question').on('click', function(){
