@@ -117,6 +117,7 @@ $(document).ready(function(){
 
     //Адаптация
     $(window).width() > 960 ? $('.service__catalog').height($('.services__bottom').height()) : false;
+    adapSB();
 })
 //Функции
 //Открытие-закртыие менюшки мобильной
@@ -148,4 +149,14 @@ function closeModal() {
 function reOpenModal(id) {
     $('.modal.active').removeClass('active');
     $('.modal#'+id).addClass('active');
+}
+
+//Адаптация сервис боксов
+function adapSB(){
+    let max = 0;
+    $('.productBox__top').each(function(){
+        max = $(this).height() > max ?  $(this).height() : max;
+    })
+
+    $('.productBox__top').height(max);
 }
