@@ -157,11 +157,11 @@ function reOpenModal(id) {
 }
 
 //Адаптация сервис боксов
-function adapSB(){
-    let max = 0;
-    $('.productBox__top').each(function(){
-        max = $(this).height() > max ?  $(this).height() : max;
-    })
+// function adapSB(){
+//     let max = 0;
+//     $('.productBox__top').each(function(){
+//         max = $(this).height() > max ?  $(this).height() : max;
+//     })
 
-    $('.productBox__top').height(max);
-}
+//     $('.productBox__top').height(max);
+// }

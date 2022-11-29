@@ -248,7 +248,7 @@ html
 
 .container
 {
-    max-width: 1234px;
+    max-width: 1461px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -375,7 +375,7 @@ textarea::placeholder
 {
     min-width: 532px;
     max-width: none;
-    min-height: 495px;
+    min-height: 405px;
     max-height: none;
     padding: 47px 76px 33px 81px;
 
@@ -423,6 +423,10 @@ textarea::placeholder
 .modal.active .modal__inner
 {
     pointer-events: all;
+}
+.modal__inner
+{
+    position: relative;
 }
 .modal__inner.center
 {
@@ -522,6 +526,14 @@ textarea::placeholder
     text-decoration: underline;
 
     color: #9f9f9f;
+}
+.modal__exit
+{
+    position: absolute;
+    top: 22px;
+    right: 22px;
+
+    cursor: pointer;
 }
 
 /* Кнопка */
@@ -985,6 +997,37 @@ textarea::placeholder
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
+.productsBox:not(:last-of-type)
+{
+    margin-bottom: 86px;
+}
+
+.otherProductBox__content
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px 16px;
+}
+.otherProductBox__content .productBox
+{
+    width: 24%;
+}
+.otherProductBox__content .productBox__top
+{
+    margin-bottom: 0;
+}
+.otherProductBox__content .productBox.big
+{
+    width: 49%;
+}
+.otherProductBox__content .productBox__title
+{
+    font-size: 14px;
+}
 
 .productBox
 {
@@ -1003,6 +1046,8 @@ textarea::placeholder
     display: -ms-flexbox;
     display: flex;
 
+    height: auto;
+    min-height: 96px;
     margin-bottom: 19px;
     padding: 44px 41px 30px 41px;
 
@@ -1260,8 +1305,8 @@ textarea::placeholder
 }
 .services__service
 {
-    width: 404px;
-    min-height: 345px;
+    width: 24%;
+    min-height: 256px;
     padding: 40px 40px 36px 56px;
 
     -webkit-transition: .3s ease all;
@@ -1275,6 +1320,8 @@ textarea::placeholder
 }
 .services__service:hover
 {
+    color: white;
+    background: #253769;
     -webkit-box-shadow: 0 1px 25px rgba(13, 41, 56, .11);
             box-shadow: 0 1px 25px rgba(13, 41, 56, .11);
 }
@@ -1283,6 +1330,10 @@ textarea::placeholder
     -webkit-transform: translateX(2px);
         -ms-transform: translateX(2px);
             transform: translateX(2px);
+}
+.services__service:hover svg *
+{
+    fill: white;
 }
 
 /* Услуга */
@@ -1834,9 +1885,9 @@ textarea::placeholder
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
 }
 .about__column
 {
@@ -1848,7 +1899,7 @@ textarea::placeholder
 }
 .about__number
 {
-    font-size: 128px;
+    font-size: 96px;
 
     text-align: center;
 
@@ -1926,6 +1977,7 @@ textarea::placeholder
 }
 .articles__article-img
 {
+    width: 100%;
     height: 227px;
 
     border-radius: 12px 12px 0 0;
@@ -2154,13 +2206,13 @@ textarea::placeholder
     font-size: 55px;
     line-height: 69px;
 
-    margin-bottom: 50px;
+    margin-bottom: 17px;
 }
 .calculate__description
 {
     line-height: 22px;
 
-    margin-bottom: 70px;
+    margin-bottom: 40px;
 
     color: #656f7c;
 }
@@ -2473,6 +2525,38 @@ textarea::placeholder
 
     color: #656f7c;
 }
+.product__buttons
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    margin-top: 96px;
+
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.product__buttons .product__button
+{
+    width: 47%;
+}
+.product__descriptions
+{
+    margin-top: 84px;
+}
+.product__descriptions-des
+{
+    line-height: 22px;
+
+    margin-bottom: 20px;
+
+    color: #656f7c;
+}
+.product__descriptions-des.bold
+{
+    font-weight: 500;
+}
 
 /* Стандартная сертификация */
 .standSerif
@@ -2777,12 +2861,14 @@ textarea::placeholder
 {
     font-size: 20px;
     font-weight: 500;
+    line-height: 31px;
 
     padding: 42px 58px 41px 35px;
 
     -webkit-transition: .3s ease all;
          -o-transition: .3s ease all;
             transition: .3s ease all;
+    text-transform: uppercase;
 
     border-radius: 12px;
     background: #fff;
@@ -3100,6 +3186,10 @@ textarea::placeholder
         display: none;
     }
     .header__menu.mobile
+    {
+        display: none;
+    }
+    .productBox__arrow.mobile
     {
         display: none;
     }
@@ -3539,6 +3629,55 @@ textarea::placeholder
     {
         margin: 0;
         margin-bottom: 60px;
+    }
+    .product__buttons
+    {
+            flex-direction: column;
+
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+    }
+    .product__buttons .product__button
+    {
+        width: 100%;
+    }
+    .product__buttons .product__button:not(:last-of-type)
+    {
+        margin-bottom: 20px;
+    }
+    .productBox__arrow
+    {
+        display: none;
+    }
+    .productBox__arrow.mobile
+    {
+        display: block;
+    }
+    .productBox__title
+    {
+        font-size: 10px !important;
+    }
+    .otherProductBox__content
+    {
+            flex-direction: column;
+
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+    }
+    .otherProductBox__content .productBox
+    {
+        width: 100%;
+    }
+    .otherProductBox__content .productBox__top
+    {
+        height: auto;
+        min-height: auto;
+    }
+    .otherProductBox__content .productBox.big
+    {
+        width: 100%;
     }
     .text
     {

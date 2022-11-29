@@ -34,7 +34,7 @@
             <li class="header__item"><a class="header__link" href="jobs.html">Карьера</a></li>
             <li class="header__item"><a class="header__link" href="###">Контакты</a></li>
           </ul>
-          <div class="header__menu"><a class="header__menu-item" href="sertif.html">Сертификация</a><a class="header__menu-item" href="#">Услуга 1</a><a class="header__menu-item" href="#">Услуга 2</a>
+          <div class="header__menu"><a class="header__menu-item" href="sertifProd.html">СМК</a><a class="header__menu-item" href="product.html">Сертификация</a><a class="header__menu-item" href="colsanting.html">Консалтинг</a><a class="header__menu-item" href="jobproduct.html">Разработка документов</a>
           </div>
           <div class="header__column"><a class="button header__button js-open-modal" href="" data-modal="request">Консультация</a><a class="header__phone" href="tel=+78008008080">8 800 800-80-80</a></div>
           <div class="header__social"><a class="social header__social-link" href="#">
@@ -224,11 +224,11 @@
         </div>
         <div class="footer__column catalogColumn">
           <p class="footer__column-title">Услуги</p>
-          <ul class="footer__column-list"> 
-            <li class="footer__column-item"><a class="footer__column-link" href="sertif.html">Сертификация </a></li>
-            <li class="footer__column-item"><a class="footer__column-link" href="sertif.html">Сертификация </a></li>
-            <li class="footer__column-item"><a class="footer__column-link" href="sertif.html">Сертификация </a></li>
-            <li class="footer__column-item"><a class="footer__column-link" href="sertif.html">Сертификация </a></li>
+          <ul class="footer__column-list">
+            <li class="footer__column-item"><a class="footer__column-link" href="sertif.html">Сертификация</a></li>
+            <li class="footer__column-item"><a class="footer__column-link" href="colsanting.html">Консалтинг</a></li>
+            <li class="footer__column-item"><a class="footer__column-link" href="sertifProd.html">СМК</a></li>
+            <li class="footer__column-item"><a class="footer__column-link" href="jobproduct.html">Разработка документов</a></li>
           </ul>
         </div>
         <div class="footer__column">
@@ -260,12 +260,15 @@
   <div class="modal__background"></div>
   <div class="modal" id="request">
     <div class="modal__inner">
+      <svg class="modal__exit js-close-modal" width="20" height="19" viewbox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <line x1="1.70711" y1="1" x2="19" y2="18.2929" stroke="black" stroke-linecap="round"></line>
+        <line x1="1" y1="18.2929" x2="18.2929" y2="1" stroke="black" stroke-linecap="round"></line>
+      </svg>
       <p class="modal__title">Оставь заявку</p>
       <p class="modal__description">В течении дня мы свяжемся с Вами</p>
       <form class="modal__form" action="">
         <input class="modal__input" type="text" placeholder="Ф.И.О">
         <input class="modal__input" type="text" placeholder="+ 7 (000) 000-00-00">
-        <textarea class="modal__textarea" placeholder="Комментарий"></textarea>
         <button class="js-reOpen-modal button modal__button" type="submit" data-modal="thanks">Отправить заявку </button>
       </form>
       <p class="modal__subdescription">Отправляя заявку вы соглашаетесь с <a href="#">политикой конфиденциальности</a> сайта</p>
@@ -273,6 +276,10 @@
   </div>
   <div class="modal" id="thanks">
     <div class="modal__inner center">
+      <svg class="modal__exit js-close-modal" width="20" height="19" viewbox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <line x1="1.70711" y1="1" x2="19" y2="18.2929" stroke="black" stroke-linecap="round"></line>
+        <line x1="1" y1="18.2929" x2="18.2929" y2="1" stroke="black" stroke-linecap="round"></line>
+      </svg>
       <p class="modal__title bigMargin">Спасибо что оставили заявку</p>
       <button class="js-close-modal button modal__button" href="#">На главную </button>
     </div>
