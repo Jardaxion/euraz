@@ -122,7 +122,7 @@ $(document).ready(function(){
 
     //Адаптация
     $(window).width() > 960 ? $('.service__catalog').height($('.services__bottom').height()) : false;
-    adapSB();
+    ah();
 })
 //Функции
 //Открытие-закртыие менюшки мобильной
@@ -156,12 +156,12 @@ function reOpenModal(id) {
     $('.modal#'+id).addClass('active');
 }
 
-//Адаптация сервис боксов
-// function adapSB(){
-//     let max = 0;
-//     $('.productBox__top').each(function(){
-//         max = $(this).height() > max ?  $(this).height() : max;
-//     })
+//Одна высота для новостей
+function ah(){
+    let max = 0;
+    $('.articles__article').each(function(){
 
-//     $('.productBox__top').height(max);
-// }
+        max = $(this).height() > max ? $(this).height() : max;
+    })
+    $('.articles__article').height(max);
+}
