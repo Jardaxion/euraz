@@ -986,6 +986,10 @@ textarea::placeholder
     margin-bottom: 32px;
 }
 
+.productsBox
+{
+    margin-bottom: 86px;
+}
 .productsBox__title
 {
     margin-bottom: 35px;
@@ -996,10 +1000,6 @@ textarea::placeholder
 
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-}
-.productsBox:not(:last-of-type)
-{
-    margin-bottom: 86px;
 }
 
 .otherProductBox__content
@@ -1098,6 +1098,10 @@ textarea::placeholder
     -ms-flex-pack: center;
     justify-content: center;
 }
+.productBox__arrow.mobile
+{
+    display: none;
+}
 
 /*---Главная страница---*/
 /* Слайдер */
@@ -1110,7 +1114,7 @@ textarea::placeholder
 {
     position: relative;
 
-    padding: 150px 343px 75px 333px;
+    padding: 150px 241px 75px 243px;
 }
 .sliderMain__arrow
 {
@@ -1539,6 +1543,7 @@ textarea::placeholder
     display: -ms-flexbox;
     display: flex;
 
+    min-height: 150px;
     margin-bottom: 33px;
 
     -webkit-box-align: center;
@@ -1723,6 +1728,8 @@ textarea::placeholder
     z-index: 2;
 
     display: grid;
+
+    margin-top: 97px;
 
     grid-template-columns: repeat(3, 123px);
     gap: 12px;
@@ -2120,6 +2127,7 @@ textarea::placeholder
     position: relative;
     z-index: 2;
 
+    min-height: 110px;
     margin-bottom: 42px;
 
     color: #656f7c;
@@ -2476,6 +2484,10 @@ textarea::placeholder
 {
     margin-right: 59px;
 }
+.product__img
+{
+    width: 234px;
+}
 .product__img-wrapper
 {
     display: -webkit-box;
@@ -2521,7 +2533,7 @@ textarea::placeholder
 .product__description
 {
     font-size: 18px;
-    line-height: 25px;
+    line-height: 32px;
 
     color: #656f7c;
 }
@@ -2602,6 +2614,8 @@ textarea::placeholder
     display: -ms-flexbox;
     display: flex;
 
+    padding: 56px 46px 43px;
+
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -2619,6 +2633,7 @@ textarea::placeholder
 {
     font-size: 20px;
     font-weight: 500;
+    line-height: 25px;
 
     margin-bottom: 20px;
 
@@ -3189,10 +3204,6 @@ textarea::placeholder
     {
         display: none;
     }
-    .productBox__arrow.mobile
-    {
-        display: none;
-    }
 }
 @media (max-width: 960px)
 {
@@ -3641,6 +3652,8 @@ textarea::placeholder
     .product__buttons .product__button
     {
         width: 100%;
+
+        text-align: center;
     }
     .product__buttons .product__button:not(:last-of-type)
     {
